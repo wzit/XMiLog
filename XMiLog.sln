@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XMiLog", "XMiLog.vcproj", "{AD0B79F0-5794-48DC-A7B7-9ABAD9F57D85}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XMiLogTest", "_test\XMiLogTest\XMiLogTest.vcproj", "{A76F28C9-1036-46BB-916F-5B977DDF9C1A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AD0B79F0-5794-48DC-A7B7-9ABAD9F57D85} = {AD0B79F0-5794-48DC-A7B7-9ABAD9F57D85}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{AD0B79F0-5794-48DC-A7B7-9ABAD9F57D85}.Debug.ActiveCfg = Debug|Win32
+		{AD0B79F0-5794-48DC-A7B7-9ABAD9F57D85}.Debug.Build.0 = Debug|Win32
+		{AD0B79F0-5794-48DC-A7B7-9ABAD9F57D85}.Release.ActiveCfg = Release|Win32
+		{AD0B79F0-5794-48DC-A7B7-9ABAD9F57D85}.Release.Build.0 = Release|Win32
+		{A76F28C9-1036-46BB-916F-5B977DDF9C1A}.Debug.ActiveCfg = Debug|Win32
+		{A76F28C9-1036-46BB-916F-5B977DDF9C1A}.Debug.Build.0 = Debug|Win32
+		{A76F28C9-1036-46BB-916F-5B977DDF9C1A}.Release.ActiveCfg = Release|Win32
+		{A76F28C9-1036-46BB-916F-5B977DDF9C1A}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

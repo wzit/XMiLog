@@ -6,7 +6,6 @@
 
 
 #include "XMiLog.h"
-#include "Utils.h"
 #include <cstdio>
 
 using namespace std;
@@ -130,7 +129,7 @@ string XMiLog::getTextLog(bool showType, bool showTime, const char *title) const
    string s;
    if (title)
    s += string(title) +"\n";
-   for (vector<XMiLogEntry const>::const_iterator iter = entries_.begin();iter < entries_.end(); 
+   for (vector<XMiLogEntry>::const_iterator iter = entries_.begin();iter < entries_.end(); 
         iter++)
       s += (*iter).getText(showType, showTime) + "\n";
    return s;
@@ -161,6 +160,7 @@ string XMiLog::getHTMLLog(string const& styleSheet, bool showType, bool showTime
 string XMiLog::_getHTMLLog(string const& styleSheet,bool showType, bool showTime, 
                            const char *title) const
 {
+   XMiTime now;
    string s = htmlHeader1;
    if (title)
       s += string("<title>") + title + "</title>\n";
@@ -168,10 +168,10 @@ string XMiLog::_getHTMLLog(string const& styleSheet,bool showType, bool showTime
    if (title)
       s += string("<div class=\"title\">") + title + "</div>\n";
    s += "    <table class=\"log\">\n";
-   for (vector<XMiLogEntry const>::const_iterator iter = entries_.begin(); iter < entries_.end(); iter++)
+   for (vector<XMiLogEntry>::const_iterator iter = entries_.begin(); iter < entries_.end(); iter++)
       s += (*iter).getHTML(showType, showTime) + "\n";
    return  s + "    </table>"
-             + "<div class=\"footer\">Generated on " + getCurrentTimeString() + "</div>\n" 
+             + "<div class=\"footer\">Generated on " + now.getString() + "</div>\n"
              + htmlFooter;
 }
 

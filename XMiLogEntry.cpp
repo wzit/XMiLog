@@ -9,8 +9,7 @@
 #include <windows.h>
 #endif
 #include "XMiLogEntry.h"
-#include "Utils.h"
-#include <ctime>
+
 
 using namespace std;
 
@@ -24,11 +23,22 @@ const char *XMiLogEntry::EntryTypeString[3] = { "Echo", "Warn", "Fatal"};
 XMiLogEntry::XMiLogEntry(EntryType type, string const& message)
    : type_(type)
    , message_(message)
+   , time_()
 {
-   _ftime64(&time_);
 #if  defined(WIN32) && defined(_DEBUG)
    OutputDebugString((getText() + "\n").c_str());
 #endif
+}
+
+
+//************************************************************************************************
+/// \brief Copy constructor
+//************************************************************************************************
+XMiLogEntry::XMiLogEntry(XMiLogEntry const& entry)
+   : type_(entry.type_)
+   , message_(entry.message_)
+   , time_(entry.time_)
+{
 }
 
 
@@ -41,13 +51,25 @@ XMiLogEntry::~XMiLogEntry()
 
 
 //************************************************************************************************
+/// \brief 
+//************************************************************************************************
+XMiLogEntry& XMiLogEntry::operator=(XMiLogEntry const& entry)
+{
+   type_ = entry.type_;
+   message_ = entry.message_;
+   time_ = entry.time_;
+   return *this;
+}
+
+
+//************************************************************************************************
 /// \brief Return the text for the log entry
 //************************************************************************************************
 string XMiLogEntry::getText(bool showType, bool showTime) const
 {
    string s = message_;
    if (showTime)
-      s = getTimeString(time_) + ": " + s;
+      s = time_.getString() + ": " + s;
    if (showType)
       s = string(EntryTypeString[type_]) + ": " + s;
    return  s;
@@ -63,7 +85,7 @@ string XMiLogEntry::getHTML(bool showType, bool showTime) const
    if (showType)
       s += "<td class=\"" + string(EntryTypeString[type_]) + "\">" + EntryTypeString[type_] + "</td>";
    if (showTime)
-      s += "<td class=\"Time\">" + getTimeString(time_) + "</td>";
+      s += "<td class=\"Time\">" + time_.getString() + "</td>";
    return s + "<td class=\"Text\">" + message_ + "</td></tr>";
 }
 

@@ -30,7 +30,7 @@ public:
    std::string getHTMLLog(std::string const& styleSheet, bool showType = true, 
                           bool showTime = true, const char *title = 00) const;
    void reset();
-   std::vector<XMiLogEntry const> entries_;
+   std::vector<XMiLogEntry> entries_;
 private:
    void writeEntryImmediately(XMiLogEntry const& entry) const;
    std::string _getHTMLLog(std::string const& styleSheet, bool showType, bool showTime,

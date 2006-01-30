@@ -219,6 +219,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -255,10 +257,10 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateExpansionKey</key>
 							<array>
 								<string>08FB7794FE84155DC02AAC07</string>
-								<string>B6E93A72098D37B5005AE7BF</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>1C08E77C0454961000C914BD</string>
 								<string>1C37FABC05509CD000000102</string>
+								<string>E2644B35053B69B200211256</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
@@ -297,8 +299,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -316,10 +316,10 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>B65A0251098D7B4100B7693F</string>
+										<string>B6C18A1A098EB2C800F858C9</string>
 										<key>history</key>
 										<array>
-											<string>B6EEA00F098D77FE00E16A54</string>
+											<string>B65A0251098D7B4100B7693F</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -377,9 +377,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>B65A0252098D7B4100B7693F</string>
+				<string>B6C18A18098EB2C800F858C9</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>B65A0253098D7B4100B7693F</string>
+				<string>B6C18A19098EB2C800F858C9</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -513,9 +513,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C0AD2B3069F1EA900FABCE6</string>
-		<string>B6C6FA22098CF1E900FF8A74</string>
-		<string>/Users/XMi/Documents/Code/XMiLog/trunk/_test/MacXMiLogTest/MacXMiLogTest.xcodeproj</string>
+		<string>/Users/XMi/Documents/Code/XMiLog/trunk/_test/XMiLogTest/MacXMiLogTest.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>644 48 1030 980 0 0 1680 1028 </string>

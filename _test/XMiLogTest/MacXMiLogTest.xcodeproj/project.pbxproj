@@ -57,7 +57,7 @@
 
 /* Begin PBXFileReference section */
 		08FB7796FE84155DC02AAC07 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		8DD76F6C0486A84900D96B5E /* MacXMiLogTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MacXMiLogTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DD76F6C0486A84900D96B5E /* MacXMiLogTest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "compiled.mach-o.executable"; path = MacXMiLogTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E93A72098D37B5005AE7BF /* XMiLog.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = XMiLog.xcodeproj; path = ../../XMiLog.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 

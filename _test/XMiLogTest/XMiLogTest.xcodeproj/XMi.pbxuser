@@ -3,17 +3,17 @@
 	08FB7793FE84155DC02AAC07 /* Project object */ = {
 		activeBuildConfigurationName = Release;
 		activeBuildStyle = 014CEA460018CE2711CA2923 /* Debug */;
-		activeExecutable = B6C6FA1B098CF19200FF8A74 /* MacXMiLogTest */;
-		activeTarget = 8DD76F620486A84900D96B5E /* MacXMiLogTest */;
+		activeExecutable = B6C6FA1B098CF19200FF8A74 /* XMiLogTest */;
+		activeTarget = 8DD76F620486A84900D96B5E /* XMiLogTest */;
 		addToTargets = (
-			8DD76F620486A84900D96B5E /* MacXMiLogTest */,
+			8DD76F620486A84900D96B5E /* XMiLogTest */,
 		);
 		breakpoints = (
 		);
 		breakpointsGroup = B6E93AFB098D3A99005AE7BF /* XCBreakpointsBucket */;
 		codeSenseManager = B6C6FA20098CF1A800FF8A74 /* Code sense */;
 		executables = (
-			B6C6FA1B098CF19200FF8A74 /* MacXMiLogTest */,
+			B6C6FA1B098CF19200FF8A74 /* XMiLogTest */,
 		);
 		perUserDictionary = {
 			PBXConfiguration.PBXFileTableDataSource3.PBXErrorsWarningsDataSource = {
@@ -112,11 +112,11 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 160346738;
-			PBXWorkspaceStateSaveDate = 160346738;
+			PBXPerProjectTemplateStateSaveDate = 160346965;
+			PBXWorkspaceStateSaveDate = 160346965;
 		};
 		perUserProjectItems = {
-			B65A0251098D7B4100B7693F /* PBXTextBookmark */ = B65A0251098D7B4100B7693F /* PBXTextBookmark */;
+			B659973E098EB37A002318EF /* PBXTextBookmark */ = B659973E098EB37A002318EF /* PBXTextBookmark */;
 			B6C18A1A098EB2C800F858C9 /* PBXTextBookmark */ = B6C18A1A098EB2C800F858C9 /* PBXTextBookmark */;
 		};
 		sourceControlManager = B6C6FA1F098CF1A800FF8A74 /* Source Control */;
@@ -126,22 +126,22 @@
 	08FB7796FE84155DC02AAC07 /* main.cpp */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {781, 774}}";
-			sepNavSelRange = "{156, 0}";
+			sepNavSelRange = "{61, 0}";
 			sepNavVisRect = "{{0, 0}, {781, 774}}";
 		};
 	};
-	8DD76F620486A84900D96B5E /* MacXMiLogTest */ = {
+	8DD76F620486A84900D96B5E /* XMiLogTest */ = {
 		activeExec = 0;
 		executables = (
-			B6C6FA1B098CF19200FF8A74 /* MacXMiLogTest */,
+			B6C6FA1B098CF19200FF8A74 /* XMiLogTest */,
 		);
 	};
-	B65A0251098D7B4100B7693F /* PBXTextBookmark */ = {
+	B659973E098EB37A002318EF /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 08FB7796FE84155DC02AAC07 /* main.cpp */;
-		name = "main.cpp: 23";
+		name = "main.cpp: 6";
 		rLen = 0;
-		rLoc = 405;
+		rLoc = 61;
 		rType = 0;
 		vrLen = 814;
 		vrLoc = 0;
@@ -156,7 +156,7 @@
 		vrLen = 814;
 		vrLoc = 0;
 	};
-	B6C6FA1B098CF19200FF8A74 /* MacXMiLogTest */ = {
+	B6C6FA1B098CF19200FF8A74 /* XMiLogTest */ = {
 		isa = PBXExecutable;
 		activeArgIndex = 2147483647;
 		activeArgIndices = (
@@ -176,7 +176,7 @@
 		executableSystemSymbolLevel = 0;
 		executableUserSymbolLevel = 0;
 		libgmallocEnabled = 0;
-		name = MacXMiLogTest;
+		name = XMiLogTest;
 		savedGlobals = {
 		};
 		sourceDirectories = (

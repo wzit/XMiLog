@@ -23,7 +23,12 @@ int main(int argc, char **argv)
    printf(log.getTextLog(true, true, logTitle.c_str()).c_str());
    string htmlLog = log.getHTMLLog(true, true, logTitle.c_str());
    FILE *fp;
+#ifdef MACOS
    if (!(fp = fopen(htmlFile.c_str(), "w")))
+#endif
+#ifdef WIN32
+   if (fopen_s(&fp, htmlFile.c_str(), "w"))
+#endif
    {
       fprintf(stderr, "Error: could not open log file %s for writing\n", htmlFile.c_str()); 
       return 1;

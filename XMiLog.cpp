@@ -61,7 +61,12 @@ XMiLog::XMiLog(bool writeImmediately, const char *logfile)
 {
 
    if (writeImmediately_)
+#ifdef MACOS
       if (!(fp_ = fopen(logfile, "w")))
+#endif
+#ifdef WIN32
+      if (fopen_s(&fp_, logfile, "w"))
+#endif
          writeImmediately_ = false;
 }
 

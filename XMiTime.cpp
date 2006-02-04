@@ -9,6 +9,10 @@
 #ifdef MACOS
 #include <sys/time.h>
 #endif // #ifdef MACOS
+#ifdef WIN32
+#include <sys/timeb.h>
+#include <ctime>
+#endif
 
 
 using namespace std;
@@ -33,6 +37,30 @@ public:
    }
 private:
    struct timeval tp_;
+};
+#endif
+
+
+#ifdef WIN32
+class XMiTime::pimpl {
+public:
+   pimpl() { _ftime64_s(&time_); }
+   pimpl(pimpl const& p) { time_ = p.time_; }
+   pimpl& operator=(pimpl const& p) { time_ = p.time_; return *this; }
+   ~pimpl() {}
+   string getString()
+   {
+      const int timeBufferLen = 1024;
+      char timestr[timeBufferLen];
+      char buffer[timeBufferLen];
+      struct tm t;
+      _localtime64_s(&t, &time_.time);
+      std::strftime(timestr, timeBufferLen, "%Y.%m.%d %H:%M:%S", &t);
+      _snprintf_s(buffer, timeBufferLen, "%s.%d", timestr, time_.millitm);
+      return buffer;
+   }
+private:
+   __timeb64 time_;
 };
 #endif
 

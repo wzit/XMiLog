@@ -1,30 +1,29 @@
-Microsoft Visual Studio Solution File, Format Version 8.00
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XMiLog", "XMiLog.vcproj", "{AD0B79F0-5794-48DC-A7B7-9ABAD9F57D85}"
-	ProjectSection(ProjectDependencies) = postProject
-	EndProjectSection
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XMiLog", "XMiLog.vcproj", "{56A9844A-7B94-4DD1-9739-EB52A0594B2D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XMiLogTest", "_test\XMiLogTest\XMiLogTest.vcproj", "{A76F28C9-1036-46BB-916F-5B977DDF9C1A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XMiLogTest", "_test\XMiLogTest\XMiLogTest.vcproj", "{144A3279-66AF-43BC-9B11-BBACA1293C1B}"
 	ProjectSection(ProjectDependencies) = postProject
-		{AD0B79F0-5794-48DC-A7B7-9ABAD9F57D85} = {AD0B79F0-5794-48DC-A7B7-9ABAD9F57D85}
+		{56A9844A-7B94-4DD1-9739-EB52A0594B2D} = {56A9844A-7B94-4DD1-9739-EB52A0594B2D}
 	EndProjectSection
 EndProject
 Global
-	GlobalSection(SolutionConfiguration) = preSolution
-		Debug = Debug
-		Release = Release
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
 	EndGlobalSection
-	GlobalSection(ProjectConfiguration) = postSolution
-		{AD0B79F0-5794-48DC-A7B7-9ABAD9F57D85}.Debug.ActiveCfg = Debug|Win32
-		{AD0B79F0-5794-48DC-A7B7-9ABAD9F57D85}.Debug.Build.0 = Debug|Win32
-		{AD0B79F0-5794-48DC-A7B7-9ABAD9F57D85}.Release.ActiveCfg = Release|Win32
-		{AD0B79F0-5794-48DC-A7B7-9ABAD9F57D85}.Release.Build.0 = Release|Win32
-		{A76F28C9-1036-46BB-916F-5B977DDF9C1A}.Debug.ActiveCfg = Debug|Win32
-		{A76F28C9-1036-46BB-916F-5B977DDF9C1A}.Debug.Build.0 = Debug|Win32
-		{A76F28C9-1036-46BB-916F-5B977DDF9C1A}.Release.ActiveCfg = Release|Win32
-		{A76F28C9-1036-46BB-916F-5B977DDF9C1A}.Release.Build.0 = Release|Win32
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56A9844A-7B94-4DD1-9739-EB52A0594B2D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{56A9844A-7B94-4DD1-9739-EB52A0594B2D}.Debug|Win32.Build.0 = Debug|Win32
+		{56A9844A-7B94-4DD1-9739-EB52A0594B2D}.Release|Win32.ActiveCfg = Release|Win32
+		{56A9844A-7B94-4DD1-9739-EB52A0594B2D}.Release|Win32.Build.0 = Release|Win32
+		{144A3279-66AF-43BC-9B11-BBACA1293C1B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{144A3279-66AF-43BC-9B11-BBACA1293C1B}.Debug|Win32.Build.0 = Debug|Win32
+		{144A3279-66AF-43BC-9B11-BBACA1293C1B}.Release|Win32.ActiveCfg = Release|Win32
+		{144A3279-66AF-43BC-9B11-BBACA1293C1B}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-	EndGlobalSection
-	GlobalSection(ExtensibilityAddIns) = postSolution
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal

@@ -26,7 +26,7 @@ XMiLogEntry::XMiLogEntry(EntryType type, string const& message)
    , time_()
 {
 #if  defined(WIN32) && defined(_DEBUG)
-   OutputDebugString((getText() + "\n").c_str());
+   OutputDebugStringA((getText() + "\n").c_str());
 #endif
 }
 

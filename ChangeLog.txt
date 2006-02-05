@@ -1,6 +1,7 @@
 2006.02.05: version 0.9.1 release
 =================================
 * Added mac port
+* Added XMi namespace for all functions
 
 2005.02.07: version 0.9 released
 ================================

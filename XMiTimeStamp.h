@@ -6,23 +6,26 @@
 
 
 #pragma once
-#ifndef XMI_TIME_H
-#define XMI_TIME_H
+#ifndef XMI_TIME_STAMP_H
+#define XMI_TIME_STAMP_H
 
 
 #include <string>
 
 
+namespace XMi {
+
+
 //************************************************************************************************
 /// \brief a class for holding a time/date 
 //************************************************************************************************
-class XMiTime
+class TimeStamp
 {
 public:
-   XMiTime();
-   XMiTime(XMiTime const& time);
-   XMiTime& operator=(XMiTime const& time);
-   ~XMiTime();
+   TimeStamp();
+   TimeStamp(TimeStamp const& time);
+   TimeStamp& operator=(TimeStamp const& time);
+   ~TimeStamp();
    std::string getString() const;
 private:
    class pimpl;
@@ -30,4 +33,7 @@ private:
 };
 
 
-#endif // #ifndef XMI_TIME_H
+} // namespace XMi
+
+
+#endif // #ifndef XMI_TIME_STAMP_H

@@ -16,7 +16,7 @@ namespace {
 //************************************************************************************************
 int main(int argc, char **argv)
 {
-   XMiLog log(true, "log.txt");
+   XMi::Log log(true, "log.txt");
    for (int i = 0; i < 10; i++)
    {
       log.echo("this is an echo");

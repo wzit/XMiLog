@@ -219,8 +219,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -263,9 +261,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>8</integer>
-									<integer>2</integer>
-									<integer>0</integer>
+									<integer>12</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
@@ -299,12 +295,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>XMiTime.cpp</string>
+								<string>main.cpp</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -312,22 +310,26 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>XMiTime.cpp</string>
+										<string>main.cpp</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>B60DABC509960E9E009C4B9E</string>
+										<string>B69F6B8209961ACC005BFB39</string>
 										<key>history</key>
 										<array>
 											<string>B6E93A9F098D39C1005AE7BF</string>
 											<string>B6E93AA0098D39C1005AE7BF</string>
 											<string>B6E93AA1098D39C1005AE7BF</string>
 											<string>B6E93AA2098D39C1005AE7BF</string>
-											<string>B6EEA001098D77FE00E16A54</string>
-											<string>B6B5089B09960B530091B7CD</string>
-											<string>B60DABC109960E9E009C4B9E</string>
-											<string>B60DABC209960E9E009C4B9E</string>
-											<string>B6EEA003098D77FE00E16A54</string>
+											<string>B690381A0996175000800B4E</string>
+											<string>B690381C0996175000800B4E</string>
+											<string>B69F6B5709961A8B005BFB39</string>
+											<string>B69F6B5809961A8B005BFB39</string>
+											<string>B69F6B5909961A8B005BFB39</string>
+											<string>B69F6B5A09961A8B005BFB39</string>
+											<string>B69F6B5B09961A8B005BFB39</string>
+											<string>B69F6B5C09961A8B005BFB39</string>
+											<string>B69F6B5D09961A8B005BFB39</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -335,12 +337,37 @@
 											<string>B6E93AB4098D39C1005AE7BF</string>
 											<string>B6E93ACD098D39C1005AE7BF</string>
 											<string>B6E93AD0098D39C1005AE7BF</string>
-											<string>B6EEA005098D77FE00E16A54</string>
 											<string>B6EEA006098D77FE00E16A54</string>
 											<string>B6EEA008098D77FE00E16A54</string>
 											<string>B6EEA009098D77FE00E16A54</string>
-											<string>B60DABC309960E9E009C4B9E</string>
-											<string>B60DABC409960E9E009C4B9E</string>
+											<string>B690381F0996175000800B4E</string>
+											<string>B69038240996175000800B4E</string>
+											<string>B69F6B5E09961A8B005BFB39</string>
+											<string>B69F6B5F09961A8B005BFB39</string>
+											<string>B69F6B6009961A8B005BFB39</string>
+											<string>B69F6B6109961A8B005BFB39</string>
+											<string>B69F6B6209961A8B005BFB39</string>
+											<string>B69F6B6309961A8B005BFB39</string>
+											<string>B69F6B6409961A8B005BFB39</string>
+											<string>B69F6B6509961A8B005BFB39</string>
+											<string>B69F6B6609961A8B005BFB39</string>
+											<string>B69F6B6709961A8B005BFB39</string>
+											<string>B69F6B6809961A8B005BFB39</string>
+											<string>B69F6B6909961A8B005BFB39</string>
+											<string>B69F6B6A09961A8B005BFB39</string>
+											<string>B69F6B6B09961A8B005BFB39</string>
+											<string>B69F6B6C09961A8B005BFB39</string>
+											<string>B69F6B6D09961A8B005BFB39</string>
+											<string>B69F6B6E09961A8B005BFB39</string>
+											<string>B69F6B6F09961A8B005BFB39</string>
+											<string>B69F6B7009961A8B005BFB39</string>
+											<string>B69F6B7109961A8B005BFB39</string>
+											<string>B69F6B7209961A8B005BFB39</string>
+											<string>B69F6B7309961A8B005BFB39</string>
+											<string>B69F6B7409961A8B005BFB39</string>
+											<string>B69F6B7509961A8B005BFB39</string>
+											<string>B69F6B7609961A8B005BFB39</string>
+											<string>B69F6B7709961A8B005BFB39</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -398,9 +425,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>B60DABC609960E9E009C4B9E</string>
+				<string>B69F6B7909961A8B005BFB39</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>B60DABC709960E9E009C4B9E</string>
+				<string>B69F6B7A09961A8B005BFB39</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -534,8 +561,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>B6C6FA43098CF2D200FF8A74</string>
 		<string>1C0AD2B3069F1EA900FABCE6</string>
+		<string>B6C6FA43098CF2D200FF8A74</string>
 		<string>/Users/XMi/Documents/Code/XMiLog/trunk/XMiLog.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -616,7 +643,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>B6C6FA43098CF2D200FF8A74</string>
-				<string>B60DABBB09960E56009C4B9E</string>
+				<string>B69F6B47099619F5005BFB39</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -963,9 +990,9 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C0AD2B3069F1EA900FABCE6</string>
-				<string>B60DABBC09960E56009C4B9E</string>
+				<string>B69F6B4D09961A70005BFB39</string>
 				<string>1CD0528B0623707200166675</string>
-				<string>B60DABBD09960E56009C4B9E</string>
+				<string>B69F6B4E09961A70005BFB39</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.run</string>
@@ -974,7 +1001,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C0AD2B3069F1EA900FABCE6</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

@@ -14,13 +14,16 @@
 using namespace std;
 
 
-const char *XMiLogEntry::EntryTypeString[3] = { "Echo", "Warn", "Fatal"};
+namespace XMi {
+
+
+const char *LogEntry::EntryTypeString[3] = { "Echo", "Warn", "Fatal"};
 
 
 //************************************************************************************************
 /// \brief Constructor
 //************************************************************************************************
-XMiLogEntry::XMiLogEntry(EntryType type, string const& message)
+LogEntry::LogEntry(EntryType type, string const& message)
    : type_(type)
    , message_(message)
    , time_()
@@ -34,7 +37,7 @@ XMiLogEntry::XMiLogEntry(EntryType type, string const& message)
 //************************************************************************************************
 /// \brief Copy constructor
 //************************************************************************************************
-XMiLogEntry::XMiLogEntry(XMiLogEntry const& entry)
+LogEntry::LogEntry(LogEntry const& entry)
    : type_(entry.type_)
    , message_(entry.message_)
    , time_(entry.time_)
@@ -45,7 +48,7 @@ XMiLogEntry::XMiLogEntry(XMiLogEntry const& entry)
 //************************************************************************************************
 /// \brief Destructor
 //************************************************************************************************
-XMiLogEntry::~XMiLogEntry()
+LogEntry::~LogEntry()
 {
 }
 
@@ -53,7 +56,7 @@ XMiLogEntry::~XMiLogEntry()
 //************************************************************************************************
 /// \brief 
 //************************************************************************************************
-XMiLogEntry& XMiLogEntry::operator=(XMiLogEntry const& entry)
+LogEntry& LogEntry::operator=(LogEntry const& entry)
 {
    type_ = entry.type_;
    message_ = entry.message_;
@@ -65,7 +68,7 @@ XMiLogEntry& XMiLogEntry::operator=(XMiLogEntry const& entry)
 //************************************************************************************************
 /// \brief Return the text for the log entry
 //************************************************************************************************
-string XMiLogEntry::getText(bool showType, bool showTime) const
+string LogEntry::getText(bool showType, bool showTime) const
 {
    string s = message_;
    if (showTime)
@@ -79,7 +82,7 @@ string XMiLogEntry::getText(bool showType, bool showTime) const
 //************************************************************************************************
 /// \brief Return a string containing the log entry in HTML format
 //************************************************************************************************
-string XMiLogEntry::getHTML(bool showType, bool showTime) const
+string LogEntry::getHTML(bool showType, bool showTime) const
 {
    string s = "      <tr>";
    if (showType)
@@ -90,3 +93,4 @@ string XMiLogEntry::getHTML(bool showType, bool showTime) const
 }
 
 
+} // namespace XMi

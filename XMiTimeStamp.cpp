@@ -5,7 +5,7 @@
 /// \brief Implementation of time class
 
 
-#include "XMiTime.h"
+#include "XMiTimeStamp.h"
 #ifdef MACOS
 #include <sys/time.h>
 #endif // #ifdef MACOS
@@ -18,12 +18,15 @@
 using namespace std;
 
 
+namespace XMi {
+
+
 #ifdef MACOS
 //************************************************************************************************
 /// \brief The platform dependant private implementation of the low level time management 
 /// functions
 //************************************************************************************************
-class XMiTime::pimpl {
+class TimeStamp::pimpl {
 public:
    pimpl() { gettimeofday(&tp_, 00); }
    pimpl(pimpl const& p) : tp_(p.tp_) {}
@@ -50,7 +53,7 @@ private:
 /// \brief The platform dependant private implementation of the low level time management 
 /// functions
 //************************************************************************************************
-class XMiTime::pimpl {
+class TimeStamp::pimpl {
 public:
    pimpl() { _ftime64_s(&time_); }
    pimpl(pimpl const& p) { time_ = p.time_; }
@@ -76,7 +79,7 @@ private:
 //************************************************************************************************
 /// \brief Constructor
 //************************************************************************************************
-XMiTime::XMiTime()
+TimeStamp::TimeStamp()
    : pimpl_(new pimpl)
 {
 }
@@ -85,7 +88,7 @@ XMiTime::XMiTime()
 //************************************************************************************************
 /// \brief Copy constructor
 //************************************************************************************************
-XMiTime::XMiTime(XMiTime const& time)
+TimeStamp::TimeStamp(TimeStamp const& time)
    : pimpl_(new pimpl(*(time.pimpl_)))
 {
 }
@@ -94,7 +97,7 @@ XMiTime::XMiTime(XMiTime const& time)
 //************************************************************************************************
 /// \brief Destructor
 //************************************************************************************************
-XMiTime::~XMiTime()
+TimeStamp::~TimeStamp()
 {
    delete pimpl_;
 }
@@ -103,7 +106,7 @@ XMiTime::~XMiTime()
 //************************************************************************************************
 /// \brief Assignment operator
 //************************************************************************************************
-XMiTime& XMiTime::operator=(XMiTime const& time)
+TimeStamp& TimeStamp::operator=(TimeStamp const& time)
 {
    pimpl_ = time.pimpl_;
    return *this;
@@ -113,7 +116,10 @@ XMiTime& XMiTime::operator=(XMiTime const& time)
 //************************************************************************************************
 /// \brief return a string containing the date/time stored in the instance
 //************************************************************************************************
-std::string XMiTime::getString() const
+std::string TimeStamp::getString() const
 {
    return pimpl_->getString();
 }
+
+
+} // namespace XMi

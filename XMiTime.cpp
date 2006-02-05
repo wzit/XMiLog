@@ -19,6 +19,10 @@ using namespace std;
 
 
 #ifdef MACOS
+//************************************************************************************************
+/// \brief The platform dependant private implementation of the low level time management 
+/// functions
+//************************************************************************************************
 class XMiTime::pimpl {
 public:
    pimpl() { gettimeofday(&tp_, 00); }
@@ -42,6 +46,10 @@ private:
 
 
 #ifdef WIN32
+//************************************************************************************************
+/// \brief The platform dependant private implementation of the low level time management 
+/// functions
+//************************************************************************************************
 class XMiTime::pimpl {
 public:
    pimpl() { _ftime64_s(&time_); }

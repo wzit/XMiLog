@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B69D9479098D14F800956D2F /* XMiTime.h in Headers */ = {isa = PBXBuildFile; fileRef = B69D9477098D14F800956D2F /* XMiTime.h */; };
 		B69D947A098D14F800956D2F /* XMiTime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B69D9478098D14F800956D2F /* XMiTime.cpp */; };
+		B6B5088509960A410091B7CD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6B5088409960A410091B7CD /* main.cpp */; };
+		B6B5089509960B360091B7CD /* libXMiLog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC046055464E500DB518D /* libXMiLog.a */; };
 		B6C6FA39098CF2BF00FF8A74 /* XMiLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6C6FA33098CF2BF00FF8A74 /* XMiLog.cpp */; };
 		B6C6FA3A098CF2BF00FF8A74 /* XMiLog.h in Headers */ = {isa = PBXBuildFile; fileRef = B6C6FA34098CF2BF00FF8A74 /* XMiLog.h */; };
 		B6C6FA3B098CF2BF00FF8A74 /* XMiLogEntry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6C6FA35098CF2BF00FF8A74 /* XMiLogEntry.cpp */; };
@@ -30,9 +32,21 @@
 		};
 /* End PBXBuildStyle section */
 
+/* Begin PBXContainerItemProxy section */
+		B6B50882099609BD0091B7CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC045055464E500DB518D;
+			remoteInfo = XMiLog;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		B69D9477098D14F800956D2F /* XMiTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMiTime.h; sourceTree = "<group>"; };
 		B69D9478098D14F800956D2F /* XMiTime.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XMiTime.cpp; sourceTree = "<group>"; };
+		B6B5087C099609600091B7CD /* XMiLogTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = XMiLogTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6B5088409960A410091B7CD /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = _test/XMiLogTest/main.cpp; sourceTree = "<group>"; };
 		B6C6FA33098CF2BF00FF8A74 /* XMiLog.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = XMiLog.cpp; sourceTree = "<group>"; };
 		B6C6FA34098CF2BF00FF8A74 /* XMiLog.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = XMiLog.h; sourceTree = "<group>"; };
 		B6C6FA35098CF2BF00FF8A74 /* XMiLogEntry.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = XMiLogEntry.cpp; sourceTree = "<group>"; };
@@ -41,6 +55,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B6B5087A099609600091B7CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6B5089509960B360091B7CD /* libXMiLog.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D289987405E68DCB004EDB86 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -54,13 +76,14 @@
 		08FB7794FE84155DC02AAC07 /* XMiLog */ = {
 			isa = PBXGroup;
 			children = (
-				08FB7795FE84155DC02AAC07 /* Source */,
+				B6B508810996099E0091B7CD /* XMiLogTest */,
+				08FB7795FE84155DC02AAC07 /* XMiLog */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
 			);
 			name = XMiLog;
 			sourceTree = "<group>";
 		};
-		08FB7795FE84155DC02AAC07 /* Source */ = {
+		08FB7795FE84155DC02AAC07 /* XMiLog */ = {
 			isa = PBXGroup;
 			children = (
 				B6C6FA33098CF2BF00FF8A74 /* XMiLog.cpp */,
@@ -70,15 +93,24 @@
 				B69D9477098D14F800956D2F /* XMiTime.h */,
 				B69D9478098D14F800956D2F /* XMiTime.cpp */,
 			);
-			name = Source;
+			name = XMiLog;
 			sourceTree = "<group>";
 		};
 		1AB674ADFE9D54B511CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				D2AAC046055464E500DB518D /* libXMiLog.a */,
+				B6B5087C099609600091B7CD /* XMiLogTest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B6B508810996099E0091B7CD /* XMiLogTest */ = {
+			isa = PBXGroup;
+			children = (
+				B6B5088409960A410091B7CD /* main.cpp */,
+			);
+			name = XMiLogTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +129,31 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		B6B5087B099609600091B7CD /* XMiLogTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6B5087E0996097F0091B7CD /* Build configuration list for PBXNativeTarget "XMiLogTest" */;
+			buildPhases = (
+				B6B50879099609600091B7CD /* Sources */,
+				B6B5087A099609600091B7CD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = "$(HOME)/bin";
+				PREBINDING = NO;
+				PRODUCT_NAME = XMiLogTest;
+				ZERO_LINK = YES;
+			};
+			dependencies = (
+				B6B50883099609BD0091B7CD /* PBXTargetDependency */,
+			);
+			name = XMiLogTest;
+			productName = XMiLogTest;
+			productReference = B6B5087C099609600091B7CD /* XMiLogTest */;
+			productType = "com.apple.product-type.tool";
+		};
 		D2AAC045055464E500DB518D /* XMiLog */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DEB91EB08733DB70010E9CD /* Build configuration list for PBXNativeTarget "XMiLog" */;
@@ -132,12 +189,21 @@
 			mainGroup = 08FB7794FE84155DC02AAC07 /* XMiLog */;
 			projectDirPath = "";
 			targets = (
+				B6B5087B099609600091B7CD /* XMiLogTest */,
 				D2AAC045055464E500DB518D /* XMiLog */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B6B50879099609600091B7CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6B5088509960A410091B7CD /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2AAC044055464E500DB518D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -149,6 +215,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B6B50883099609BD0091B7CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC045055464E500DB518D /* XMiLog */;
+			targetProxy = B6B50882099609BD0091B7CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1DEB91EC08733DB70010E9CD /* Debug */ = {
@@ -205,6 +279,36 @@
 			};
 			name = Release;
 		};
+		B6B5087F0996097F0091B7CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = "$(HOME)/bin";
+				PREBINDING = NO;
+				PRODUCT_NAME = XMiLogTest;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		B6B508800996097F0091B7CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = "$(HOME)/bin";
+				PREBINDING = NO;
+				PRODUCT_NAME = XMiLogTest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -222,6 +326,15 @@
 			buildConfigurations = (
 				1DEB91F008733DB70010E9CD /* Debug */,
 				1DEB91F108733DB70010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6B5087E0996097F0091B7CD /* Build configuration list for PBXNativeTarget "XMiLogTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6B5087F0996097F0091B7CD /* Debug */,
+				B6B508800996097F0091B7CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

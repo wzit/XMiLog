@@ -6,11 +6,14 @@ using namespace std;
 
 
 namespace {
-   const string htmlFile("log.html");
-   const string logTitle("A sample log");
+   const string htmlFile("log.html");        ///< The name of the HTML log file
+   const string logTitle("A sample log");    ///< The title of the Log
 }
 
 
+//************************************************************************************************
+/// \brief Program entrypoint
+//************************************************************************************************
 int main(int argc, char **argv)
 {
    XMiLog log(true, "log.txt");

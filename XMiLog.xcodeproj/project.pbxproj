@@ -17,21 +17,6 @@
 		B6C6FA3C098CF2BF00FF8A74 /* XMiLogEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = B6C6FA36098CF2BF00FF8A74 /* XMiLogEntry.h */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXBuildStyle section */
-		014CEA520018CE5811CA2923 /* Debug */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-			};
-			name = Debug;
-		};
-		014CEA530018CE5811CA2923 /* Release */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-			};
-			name = Release;
-		};
-/* End PBXBuildStyle section */
-
 /* Begin PBXContainerItemProxy section */
 		B6B50882099609BD0091B7CD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -138,14 +123,6 @@
 			);
 			buildRules = (
 			);
-			buildSettings = {
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
-				INSTALL_PATH = "$(HOME)/bin";
-				PREBINDING = NO;
-				PRODUCT_NAME = XMiLogTest;
-				ZERO_LINK = YES;
-			};
 			dependencies = (
 				B6B50883099609BD0091B7CD /* PBXTargetDependency */,
 			);
@@ -164,8 +141,6 @@
 			);
 			buildRules = (
 			);
-			buildSettings = {
-			};
 			dependencies = (
 			);
 			name = XMiLog;
@@ -179,12 +154,6 @@
 		08FB7793FE84155DC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = 1DEB91EF08733DB70010E9CD /* Build configuration list for PBXProject "XMiLog" */;
-			buildSettings = {
-			};
-			buildStyles = (
-				014CEA520018CE5811CA2923 /* Debug */,
-				014CEA530018CE5811CA2923 /* Release */,
-			);
 			hasScannedForEncodings = 1;
 			mainGroup = 08FB7794FE84155DC02AAC07 /* XMiLog */;
 			projectDirPath = "";
@@ -228,6 +197,10 @@
 		1DEB91EC08733DB70010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 0.9.1;
 				DYLIB_CURRENT_VERSION = 0.9.1;

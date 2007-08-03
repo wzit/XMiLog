@@ -23,16 +23,16 @@ namespace {
    );
 
    const string defaultStyleSheet(
-      "      body {font-family: \"Trebuchet MS\",\"Arial\",\"Verdana\",\"Helvetica\", sans-serif; font-size: 75%;}\n"
-      "      table.log {width: 100%;border: solid 1px #999999;}\n"
+      "      body {font-family: \"Verdana\",\"Helvetica\", sans-serif; font-size: 70%%;}\n"
+      "      table.log {width: 100%%;border: solid 1px #999999;}\n"
       "      table.log td { padding-left: 5px; padding-right: 5px;}\n"
-      "      .title  {color: black;text-align: center;font-size: 200%;font-weight:bold;margin-bottom: 15px;}\n"
+      "      .title  {color: black;text-align: center;font-size: 100%%;font-weight:bold;margin-bottom: 15px;}\n"
       "      td.Echo {color: white;background-color: #73C840;white-space: nowrap;}\n"
       "      td.Warn {color: white;background-color: #FF9600;white-space: nowrap;}\n"
       "      td.Fatal{color: white;background-color: #FF1800;white-space: nowrap;}\n"
       "      td.Time {color: black;background-color: #dddddd;white-space: nowrap;}\n"
-      "      td.Text {color: black;background-color: #eeeeee;width: 100%;}\n"
-      "      .footer {width: 100%;font-size: 90%; text-align: right; font-style: italic;}\n"
+      "      td.Text {color: black;background-color: #eeeeee;width: 80%%;}\n"
+      "      .footer {width: 100%%;font-size: 90%%; text-align: right; font-style: italic;}\n"
    );
 
    const string htmlHeader3(

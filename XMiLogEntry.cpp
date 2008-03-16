@@ -28,8 +28,11 @@ LogEntry::LogEntry(EntryType type, string const& message)
    , message_(message)
    , time_()
 {
-#if  defined(WIN32) && defined(_DEBUG)
+#if defined(WIN32) && defined(_DEBUG)
    OutputDebugStringA((getText() + "\n").c_str());
+#endif
+#if defined(MACOS) && defined(DEBUG)
+   printf((getText() + string("\n")).c_str());
 #endif
 }
 

@@ -1,7 +1,7 @@
 XMiLog v0.9.1
 ==========
 
-Xavier Michelon, 2005/02/07
+Xavier Michelon, 2008/06/24
 
 What is XMiLog ?
 ===============
@@ -21,10 +21,10 @@ Usage
 =====
 This library is made for use by software developers. This software has been
 developed under :
-* Microsoft Visual Studio 2005 for the Windows version (developed and tested
+* Microsoft Visual Studio 2008 for the Windows version (developed and tested
 under Windows XP)
-* Xcode 2.2.1 for the Mac OS X version (developed and tested under Mac OS X 
-10.4, a.k.a Tiger)
+* Xcode 3.1 for the Mac OS X version (developed and tested under Mac OS X 
+10.5, a.k.a Leopard)
 Project files for those two development environments are provided. No Linux
 port is available so far. Porting would be easy, only the time management
 routine are platform-dependant. The platform-dependant code has been

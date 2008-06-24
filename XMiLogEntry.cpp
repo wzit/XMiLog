@@ -31,7 +31,7 @@ LogEntry::LogEntry(EntryType type, string const& message)
 #if defined(WIN32) && defined(_DEBUG)
    OutputDebugStringA((getText() + "\n").c_str());
 #endif
-#if defined(MACOS) && defined(DEBUG)
+#if defined(MACOS) && defined(_DEBUG)
    printf((getText() + string("\n")).c_str());
 #endif
 }

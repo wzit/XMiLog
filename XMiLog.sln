@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XMiLog", "XMiLog.vcproj", "{56A9844A-7B94-4DD1-9739-EB52A0594B2D}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XMiLogTest", "_test\XMiLogTest\XMiLogTest.vcproj", "{95843AF0-A32A-4642-A7D5-46557998DCD8}"

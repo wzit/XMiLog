@@ -99,7 +99,6 @@ TimeStamp::TimeStamp(TimeStamp const& time)
 //************************************************************************************************
 TimeStamp::~TimeStamp()
 {
-   delete pimpl_;
 }
 
 
@@ -108,7 +107,7 @@ TimeStamp::~TimeStamp()
 //************************************************************************************************
 TimeStamp& TimeStamp::operator=(TimeStamp const& time)
 {
-   pimpl_ = time.pimpl_;
+   pimpl_.reset(new pimpl(*(time.pimpl_)));
    return *this;
 }
 

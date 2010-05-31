@@ -11,6 +11,7 @@
 
 
 #include <string>
+#include <memory>
 
 
 namespace XMi {
@@ -29,7 +30,7 @@ public:
    std::string getString() const;
 private:
    class pimpl;
-   pimpl *pimpl_;
+   std::auto_ptr<pimpl> pimpl_;
 };
 
 

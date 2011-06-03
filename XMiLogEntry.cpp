@@ -32,7 +32,7 @@ LogEntry::LogEntry(EntryType type, string const& message)
    OutputDebugStringA((getText() + "\n").c_str());
 #endif
 #if defined(MACOS) && defined(_DEBUG)
-   printf((getText() + string("\n")).c_str());
+   printf("%s", (getText() + string("\n")).c_str());
 #endif
 }
 
